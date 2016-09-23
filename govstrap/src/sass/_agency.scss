@@ -154,25 +154,25 @@ nav#navigation {
 
 main {
   div#main {
-    background-color: #f0f0f0;
+    background-color: #fff;
     border: 1px solid #c0c0c0;
     border-top: none;
     border-bottom: none;
     border-radius: 0px 0px 0px 0px;
     section#main-content-section {
       background: rgb(255, 255, 255) none repeat scroll 0 0;
-      border-radius: 5px;
-      border: 1px solid #c0c0c0;
+      border-radius: 0px;
+      border: none;
       clear: both;
       margin-bottom: 10px;
       overflow: hidden;
-      padding: 25px 15px 1em;
+      padding: 0px;
     }
   }
 }
 
 footer {
-  background-color: #f0f0f0;
+  background-color: #fff;
   border: 1px solid #c0c0c0;
   border-top: none;
   border-radius: 0px 0px 5px 5px;
