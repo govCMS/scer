@@ -1,0 +1,234 @@
+// Styles specific for this site
+
+body {
+  font-size: 12px;
+  background-color: #000;
+}
+
+h1 {
+  color: #39b7cd;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+}
+
+h2 {
+  color: #000;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+}
+
+.post-nav {
+  color: #999999;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #c0c0c0;
+
+}
+
+#coas {
+  background-color: #fff;
+}
+
+.note {
+  background: #eeffff none repeat scroll 0 0;
+  border: 1px dotted #cccccc;
+  font-size: 12px;
+}
+
+aside.suf-widget {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+  line-height: 100%;
+  padding: 0px;
+  h3 {
+    color: #444;
+    font: bold 100%/100% Arial,Helvetica,sans-serif;
+    margin: 0.5em 0;
+  }
+
+  ul {
+    li {
+      background-position: 0 1px;
+      background-repeat: no-repeat;
+      padding-bottom: 3px;
+      padding-left: 22px;
+
+      a {
+        color: #000000;
+        text-decoration: none;
+
+        &:visited {
+          color: #000000;
+          text-decoration: none;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+header {
+  background-color: #000;
+  border: none;
+  #coas {
+    a {
+      display: inline-block;
+      img {
+        margin: 40px 10px 20px 10px;
+      }
+    }
+  }
+  #logo {
+    a {
+      display: inline-block;
+      img {
+        margin: 20px 20px 5px 20px;
+      }
+    }
+  }
+}
+
+nav#navigation {
+
+  div.container {
+    background: rgba(0, 0, 0, 0) linear-gradient(#252525, #0a0a0a) repeat scroll 0 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    clear: both;
+    display: block;
+    float: left;
+    margin: 0 auto 6px;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .nav-tabs {
+    margin-left: 10px;
+    border-bottom: none;
+    li {
+      a {
+        background: rgb(219, 219, 219) none repeat scroll 0 0;
+        border-color: -moz-use-text-color;
+        border-style: none;
+        border-width: medium;
+        color: #444;
+        font-family: Arial,Helvetica,sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+
+        &.active {
+          background: rgb(79, 79, 79) none repeat scroll 0 0;
+          border-color: -moz-use-text-color;
+          border-style: none;
+          border-width: medium;
+          color: #fff;
+          font-family: Arial,Helvetica,sans-serif;
+          font-size: 14px;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  .search-form-widget {
+    div.form-item.form-type-textfield.form-item-keys-1 {
+      display: inline-block;
+      input {
+        min-width: 10em;
+      }
+    }
+  }
+}
+
+main {
+  div#main {
+    background-color: #f0f0f0;
+    border: 1px solid #c0c0c0;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 0px 0px 0px 0px;
+    section#main-content-section {
+      background: rgb(255, 255, 255) none repeat scroll 0 0;
+      border-radius: 5px;
+      border: 1px solid #c0c0c0;
+      clear: both;
+      margin-bottom: 10px;
+      overflow: hidden;
+      padding: 25px 15px 1em;
+    }
+  }
+}
+
+footer {
+  background-color: #f0f0f0;
+  border: 1px solid #c0c0c0;
+  border-top: none;
+  border-radius: 0px 0px 5px 5px;
+  padding-bottom: 15px;
+  a {
+    color: #000;
+  }
+}
+
+div#content {
+  padding-left: 15px;
+  aside {
+    line-height: 160%;
+    color: #666;
+    div#block-views-9d48c1bdf34a5432a235eb928a4e213d {
+      background: #ffffcc none repeat scroll 0 0;
+    }
+    .block-views, #block-aggregator-feed-1 {
+      border-radius: 5px;
+      margin: 0 0 15px;
+      padding: 0px;
+      background: #fff none repeat scroll 0 0;
+      border: 1px solid #c0c0c0;
+      h2 {
+        &.block-title {
+          font-size: 12px;
+          color: #444;
+          font: bold 100%/100% Arial,Helvetica,sans-serif;
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px;
+          border-bottom: 1px dotted #c0c0c0;
+          margin: 0;
+          padding: 8px 24px 7px 10px;
+        }
+      }
+      div.views-field-title {
+        margin: 0;
+        overflow: hidden;
+        padding: 0px 0px 0px;
+      }
+      ul {
+        list-style-type: disc;
+        padding-left:25px;
+        padding-right: 5px;
+        li {
+          margin: 0;
+          padding-top: 2px;
+          padding-bottom: 3px;
+          a {
+            color: #000;
+          }
+        }
+      }
+      div.more-link {
+        display: none;
+      }
+    }
+  }
+}
