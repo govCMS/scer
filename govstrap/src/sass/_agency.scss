@@ -180,6 +180,36 @@ footer {
   a {
     color: #000;
   }
+
+  ul.list-inline {
+    padding: 15px 0px 0px 0px;
+    margin: 0;
+    display: table;
+    width: 100%;
+    border-top: 1px solid gainsboro;
+
+    li {
+      display: table-cell;
+      width: 1%;
+      float: none;
+    }
+
+    li a {
+      text-align: center;
+      border-left: 1px solid rgba(255, 255, 255, .75);
+      border-right: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    li:first-child a {
+      border-left: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    li:last-child a {
+      border-right: 0;
+      border-radius: 0 3px 3px 0;
+    }
+  }
 }
 
 div#content {

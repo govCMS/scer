@@ -184,21 +184,51 @@ footer {
 footer a {
   color: #000;
 }
+/* line 184, ../src/sass/_agency.scss */
+footer ul.list-inline {
+  padding: 15px 0px 0px 0px;
+  margin: 0;
+  display: table;
+  width: 100%;
+  border-top: 1px solid gainsboro;
+}
+/* line 191, ../src/sass/_agency.scss */
+footer ul.list-inline li {
+  display: table-cell;
+  width: 1%;
+  float: none;
+}
+/* line 197, ../src/sass/_agency.scss */
+footer ul.list-inline li a {
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.75);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* line 203, ../src/sass/_agency.scss */
+footer ul.list-inline li:first-child a {
+  border-left: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* line 208, ../src/sass/_agency.scss */
+footer ul.list-inline li:last-child a {
+  border-right: 0;
+  border-radius: 0 3px 3px 0;
+}
 
-/* line 185, ../src/sass/_agency.scss */
+/* line 215, ../src/sass/_agency.scss */
 div#content {
   padding-left: 15px;
 }
-/* line 187, ../src/sass/_agency.scss */
+/* line 217, ../src/sass/_agency.scss */
 div#content aside {
   line-height: 160%;
   color: #666;
 }
-/* line 190, ../src/sass/_agency.scss */
+/* line 220, ../src/sass/_agency.scss */
 div#content aside div#block-views-9d48c1bdf34a5432a235eb928a4e213d {
   background: #ffffcc none repeat scroll 0 0;
 }
-/* line 193, ../src/sass/_agency.scss */
+/* line 223, ../src/sass/_agency.scss */
 div#content aside .block-views, div#content aside #block-aggregator-feed-1 {
   border-radius: 5px;
   margin: 0 0 15px;
@@ -206,7 +236,7 @@ div#content aside .block-views, div#content aside #block-aggregator-feed-1 {
   background: #fff none repeat scroll 0 0;
   border: 1px solid #c0c0c0;
 }
-/* line 200, ../src/sass/_agency.scss */
+/* line 230, ../src/sass/_agency.scss */
 div#content aside .block-views h2.block-title, div#content aside #block-aggregator-feed-1 h2.block-title {
   font-size: 12px;
   color: #444;
@@ -217,29 +247,29 @@ div#content aside .block-views h2.block-title, div#content aside #block-aggregat
   margin: 0;
   padding: 8px 24px 7px 10px;
 }
-/* line 211, ../src/sass/_agency.scss */
+/* line 241, ../src/sass/_agency.scss */
 div#content aside .block-views div.views-field-title, div#content aside #block-aggregator-feed-1 div.views-field-title {
   margin: 0;
   overflow: hidden;
   padding: 0px 0px 0px;
 }
-/* line 216, ../src/sass/_agency.scss */
+/* line 246, ../src/sass/_agency.scss */
 div#content aside .block-views ul, div#content aside #block-aggregator-feed-1 ul {
   list-style-type: disc;
   padding-left: 25px;
   padding-right: 5px;
 }
-/* line 220, ../src/sass/_agency.scss */
+/* line 250, ../src/sass/_agency.scss */
 div#content aside .block-views ul li, div#content aside #block-aggregator-feed-1 ul li {
   margin: 0;
   padding-top: 2px;
   padding-bottom: 3px;
 }
-/* line 224, ../src/sass/_agency.scss */
+/* line 254, ../src/sass/_agency.scss */
 div#content aside .block-views ul li a, div#content aside #block-aggregator-feed-1 ul li a {
   color: #000;
 }
-/* line 229, ../src/sass/_agency.scss */
+/* line 259, ../src/sass/_agency.scss */
 div#content aside .block-views div.more-link, div#content aside #block-aggregator-feed-1 div.more-link {
   display: none;
 }
