@@ -71,6 +71,10 @@ function govstrap_menu_link__main_menu($variables) {
     return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . "</li>\n";
 }
 
+function govstrap_menu_tree__menu_footer_sub_menu($variables) {
+    return '<ul class="list-inline small-links">' . $variables['tree'] . '</ul>';
+}
+
 
 function node_sibling($dir = 'next', $node, $next_node_text=NULL, $prepend_text=NULL, $append_text=NULL, $tid = FALSE){
     if($tid){
