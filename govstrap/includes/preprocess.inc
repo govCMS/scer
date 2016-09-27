@@ -131,8 +131,10 @@ function govstrap_preprocess_block(&$variables, $hook) {
 }
 
 function govstrap_preprocess_field(&$variables) {
-  $site_id = variable_get('acsf_site_id', '1891');
+  $public_file_path = base_path().variable_get('file_public_path');
   if ($variables['element']['#field_name'] == 'body') {
-    $variables['items']['0']['#markup'] = str_replace('https://scer.govspace.gov.au/files', "/sites/g/files/net$site_id/f/files", $variables['items']['0']['#markup']);
+
+    $variables['items']['0']['#markup'] = preg_replace('#sites/g/files/net[0-9]*/f#', $public_file_path, $variables['items']['0']['#markup']);
+
   }
 }
