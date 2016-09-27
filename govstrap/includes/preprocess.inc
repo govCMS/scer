@@ -98,6 +98,7 @@ function govstrap_preprocess_html(&$variables, $hook) {
  * @see page.tpl.php
  */
 function govstrap_preprocess_page(&$variables) {
+
   // Set page container columns.
   $variables['container_class'] = 'container';
 
@@ -127,4 +128,11 @@ function govstrap_preprocess_block(&$variables, $hook) {
   }
 
   $variables['title_attributes_array']['class'][] = 'block-title';
+}
+
+function govstrap_preprocess_field(&$variables) {
+  $site_id = variable_get('acsf_site_id', '1891');
+  if ($variables['element']['#field_name'] == 'body') {
+    $variables['items']['0']['#markup'] = str_replace('https://scer.govspace.gov.au/files', "/sites/g/files/net$site_id/f/files", $variables['items']['0']['#markup']);
+  }
 }
