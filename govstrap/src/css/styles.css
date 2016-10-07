@@ -91,7 +91,7 @@ nav#navigation div.container {
   clear: both;
   display: block;
   float: left;
-  margin: 0 auto 6px;
+  margin: 0 auto;
   width: 100%;
   padding: 0px;
 }
@@ -113,8 +113,8 @@ nav#navigation .nav-tabs li a {
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
+  border-radius: 0;
 }
-border-radius
 nav#navigation .nav-tabs li a.active {
   background: #4f4f4f none repeat scroll 0 0;
   border-color: -moz-use-text-color;
