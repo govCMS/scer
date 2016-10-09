@@ -96,49 +96,49 @@ nav#navigation div.container {
   padding: 0px;
 }
 nav#navigation .nav-tabs {
-  margin-left: 10px;
+  margin-left: 0;
   border-bottom: none;
 }
 nav#navigation .nav-tabs li {
   padding-top: 0;
 }
 nav#navigation .nav-tabs li a {
-  background: #dbdbdb none repeat scroll 0 0;
-  border-color: -moz-use-text-color;
-  border-style: none;
-  border-width: medium;
-  color: #444;
-  font-family: Arial,Helvetica,sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  border-radius: 0;
-}
-nav#navigation .nav-tabs li a.active {
-  background: #4f4f4f none repeat scroll 0 0;
-  border-color: -moz-use-text-color;
-  border-style: none;
-  border-width: medium;
+  border: none;
   color: #fff;
   font-family: Arial,Helvetica,sans-serif;
   font-size: 14px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
+  border-radius: 0;
 }
-nav#navigation .search-form-widget input {
+nav#navigation .nav-tabs li a.active {
+  background-color: #4f4f4f;
+  font-weight: bold;
+}
+nav#navigation .nav-tabs li a:active, nav#navigation .nav-tabs li a:focus, nav#navigation .nav-tabs li a:hover {
+  text-decoration: underline;
+}
+nav#navigation #search-block-form {
+  float: right;
+}
+nav#navigation #search-block-form input {
   padding: 6px 10px;
 }
-nav#navigation .search-form-widget #edit-search-block-form--2 {
+nav#navigation #search-block-form #edit-search-block-form--2 {
   min-width: 15em;
-  padding: 5px 10px;
+  padding: 9px 10px;
 }
-nav#navigation .search-form-widget div.form-item.form-type-textfield {
+nav#navigation #search-block-form div.form-item.form-type-textfield {
   display: inline-block;
 }
-nav#navigation .search-form-widget .form-item {
+nav#navigation #search-block-form .form-item {
   margin-top: 0;
+}
+nav#navigation #search-block-form #edit-submit {
+  padding: 11px;
+  margin-left: -4px;
+  opacity: 0.4;
+}
+nav#navigation #search-block-form #edit-submit:active, nav#navigation #search-block-form #edit-submit:focus, nav#navigation #search-block-form #edit-submit:hover {
+  opacity: 1;
 }
 
 main div#main {
@@ -227,5 +227,9 @@ div#content aside .block-views ul li a, div#content aside #block-aggregator-feed
   color: #000;
 }
 div#content aside .block-views div.more-link, div#content aside #block-aggregator-feed-1 div.more-link {
+  display: none;
+}
+div#content .pager .pager-ellipsis,
+div#content .pager li a:empty {
   display: none;
 }
