@@ -115,6 +115,7 @@ nav#navigation .nav-tabs li a.active {
 }
 nav#navigation .nav-tabs li a:active, nav#navigation .nav-tabs li a:focus, nav#navigation .nav-tabs li a:hover {
   text-decoration: underline;
+  color: #000;
 }
 nav#navigation #search-block-form {
   float: right;
@@ -125,20 +126,24 @@ nav#navigation #search-block-form input {
 nav#navigation #search-block-form #edit-search-block-form--2 {
   min-width: 15em;
   padding: 9px 10px;
+  opacity: 0.4;
+}
+nav#navigation #search-block-form #edit-search-block-form--2:active, nav#navigation #search-block-form #edit-search-block-form--2:focus, nav#navigation #search-block-form #edit-search-block-form--2:hover {
+  opacity: 1;
 }
 nav#navigation #search-block-form div.form-item.form-type-textfield {
   display: inline-block;
 }
 nav#navigation #search-block-form .form-item {
-  margin-top: 0;
+  margin: 0;
 }
 nav#navigation #search-block-form #edit-submit {
   padding: 11px;
   margin-left: -4px;
-  opacity: 0.4;
+  color: #fff;
 }
 nav#navigation #search-block-form #edit-submit:active, nav#navigation #search-block-form #edit-submit:focus, nav#navigation #search-block-form #edit-submit:hover {
-  opacity: 1;
+  color: #000;
 }
 
 main div#main {

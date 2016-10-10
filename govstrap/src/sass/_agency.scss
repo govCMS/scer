@@ -129,6 +129,7 @@ nav#navigation {
         &:focus,
         &:hover {
           text-decoration: underline;
+          color: #000;
         }
       }
     }
@@ -141,21 +142,27 @@ nav#navigation {
     #edit-search-block-form--2 {
       min-width: 15em; // search textbox width
       padding: 9px 10px;
-    }
-    div.form-item.form-type-textfield {
-      display: inline-block;
-    }
-    .form-item {
-      margin-top: 0;
-    }
-    #edit-submit {
-      padding: 11px;
-      margin-left: -4px;
       opacity: 0.4;
       &:active,
       &:focus,
       &:hover {
         opacity: 1;
+      }
+    }
+    div.form-item.form-type-textfield {
+      display: inline-block;
+    }
+    .form-item {
+      margin: 0;
+    }
+    #edit-submit {
+      padding: 11px;
+      margin-left: -4px;
+      color: #fff;
+      &:active,
+      &:focus,
+      &:hover {
+        color: #000;
       }
     }
   }
