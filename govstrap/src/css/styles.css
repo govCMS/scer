@@ -85,9 +85,11 @@ header #logo a img {
   margin: 20px 20px 5px 20px;
 }
 
-nav#navigation div.container {
+nav#navigation {
   background: transparent linear-gradient(#252525, #0a0a0a) repeat scroll 0 0;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+nav#navigation div.container {
   clear: both;
   display: block;
   float: left;
@@ -117,6 +119,9 @@ nav#navigation .nav-tabs li a:active, nav#navigation .nav-tabs li a:focus, nav#n
   text-decoration: underline;
   color: #000;
 }
+nav#navigation .nav-tabs li a:active.active, nav#navigation .nav-tabs li a:focus.active, nav#navigation .nav-tabs li a:hover.active {
+  color: #fff;
+}
 nav#navigation #search-block-form {
   float: right;
 }
@@ -140,7 +145,6 @@ nav#navigation #search-block-form .form-item {
 nav#navigation #search-block-form #edit-submit {
   padding: 11px;
   margin-left: -4px;
-  color: #fff;
 }
 nav#navigation #search-block-form #edit-submit:active, nav#navigation #search-block-form #edit-submit:focus, nav#navigation #search-block-form #edit-submit:hover {
   color: #000;

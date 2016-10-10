@@ -99,10 +99,9 @@ header {
 }
 
 nav#navigation {
-
+  background: rgba(0, 0, 0, 0) linear-gradient(#252525, #0a0a0a) repeat scroll 0 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   div.container {
-    background: rgba(0, 0, 0, 0) linear-gradient(#252525, #0a0a0a) repeat scroll 0 0;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
     clear: both;
     display: block;
     float: left;
@@ -130,6 +129,9 @@ nav#navigation {
         &:hover {
           text-decoration: underline;
           color: #000;
+          &.active {
+            color: #fff;
+          }
         }
       }
     }
@@ -158,7 +160,7 @@ nav#navigation {
     #edit-submit {
       padding: 11px;
       margin-left: -4px;
-      color: #fff;
+      //color: #fff;
       &:active,
       &:focus,
       &:hover {
