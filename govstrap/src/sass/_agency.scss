@@ -111,15 +111,17 @@ nav#navigation {
   }
   .nav-tabs {
     margin-left: 0;
-    border-bottom: none;
+    border-bottom: 1px;
     li {
-      padding-top: 0;
+      padding: 0;
       a {
         border: none;
         color: #fff;
         font-family: Arial,Helvetica,sans-serif;
         font-size: 14px;
         border-radius: 0;
+        transition: all 0.5s ease;
+        padding: 10px 20px;
         &.active {
           background-color: #4f4f4f;
           font-weight: bold;
@@ -145,6 +147,7 @@ nav#navigation {
       min-width: 15em; // search textbox width
       padding: 9px 10px;
       opacity: 0.4;
+      transition: all 0.5s ease;
       &:active,
       &:focus,
       &:hover {
@@ -262,9 +265,26 @@ div#content {
     }
   }
   .pager {
+    text-align: left;
+    margin-top: 2em;
     .pager-ellipsis,
-    li a:empty {
-      display: none;
+    li {
+      a {
+        border-radius: 3px;
+        &:empty {
+          display: none;
+        }
+      }
+      &:first-of-type {
+        padding-left: 0;
+        margin-left: 0;
+      }
     }
+  }
+  .content .submitted {
+    opacity: 0.75;
+  }
+  ul.links li.node-readmore.first {
+    padding-left: 0;
   }
 }

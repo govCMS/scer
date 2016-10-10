@@ -99,10 +99,10 @@ nav#navigation div.container {
 }
 nav#navigation .nav-tabs {
   margin-left: 0;
-  border-bottom: none;
+  border-bottom: 1px;
 }
 nav#navigation .nav-tabs li {
-  padding-top: 0;
+  padding: 0;
 }
 nav#navigation .nav-tabs li a {
   border: none;
@@ -110,6 +110,8 @@ nav#navigation .nav-tabs li a {
   font-family: Arial,Helvetica,sans-serif;
   font-size: 14px;
   border-radius: 0;
+  transition: all 0.5s ease;
+  padding: 10px 20px;
 }
 nav#navigation .nav-tabs li a.active {
   background-color: #4f4f4f;
@@ -132,6 +134,7 @@ nav#navigation #search-block-form #edit-search-block-form--2 {
   min-width: 15em;
   padding: 9px 10px;
   opacity: 0.4;
+  transition: all 0.5s ease;
 }
 nav#navigation #search-block-form #edit-search-block-form--2:active, nav#navigation #search-block-form #edit-search-block-form--2:focus, nav#navigation #search-block-form #edit-search-block-form--2:hover {
   opacity: 1;
@@ -238,7 +241,26 @@ div#content aside .block-views ul li a, div#content aside #block-aggregator-feed
 div#content aside .block-views div.more-link, div#content aside #block-aggregator-feed-1 div.more-link {
   display: none;
 }
-div#content .pager .pager-ellipsis,
+div#content .pager {
+  text-align: left;
+  margin-top: 2em;
+}
+div#content .pager .pager-ellipsis a,
+div#content .pager li a {
+  border-radius: 3px;
+}
+div#content .pager .pager-ellipsis a:empty,
 div#content .pager li a:empty {
   display: none;
+}
+div#content .pager .pager-ellipsis:first-of-type,
+div#content .pager li:first-of-type {
+  padding-left: 0;
+  margin-left: 0;
+}
+div#content .content .submitted {
+  opacity: 0.75;
+}
+div#content ul.links li.node-readmore.first {
+  padding-left: 0;
 }
