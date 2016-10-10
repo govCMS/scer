@@ -111,16 +111,17 @@ nav#navigation {
   }
   .nav-tabs {
     margin-left: 0;
-    border-bottom: 1px;
+    border-bottom: 0;
     li {
       padding: 0;
+      margin-bottom: 0;
       a {
         border: none;
         color: #fff;
         font-family: Arial,Helvetica,sans-serif;
         font-size: 14px;
         border-radius: 0;
-        transition: all 0.5s ease;
+        transition: all 0.2s ease;
         padding: 10px 20px;
         &.active {
           background-color: #4f4f4f;
@@ -143,11 +144,11 @@ nav#navigation {
     input {
       padding: 6px 10px;
     }
-    #edit-search-block-form--2 {
-      min-width: 15em; // search textbox width
+    #edit-search-block-form--2 {     // search textbox width
+      min-width: 15em;
       padding: 9px 10px;
       opacity: 0.4;
-      transition: all 0.5s ease;
+      transition: all 0.2s ease;
       &:active,
       &:focus,
       &:hover {
@@ -163,10 +164,11 @@ nav#navigation {
     #edit-submit {
       padding: 11px;
       margin-left: -4px;
-      //color: #fff;
+      opacity: 0.9;
       &:active,
       &:focus,
       &:hover {
+        opacity: 1;
         color: #000;
       }
     }
@@ -267,13 +269,9 @@ div#content {
   .pager {
     text-align: left;
     margin-top: 2em;
-    .pager-ellipsis,
     li {
       a {
         border-radius: 3px;
-        &:empty {
-          display: none;
-        }
       }
       &:first-of-type {
         padding-left: 0;
