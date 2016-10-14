@@ -114,10 +114,10 @@ function govstrap_pager($tags = array(), $limit = 10, $element = 0, $parameters 
   $page_prev = $pager_page_array[$element] + 1;
   
   if ($pager_total[$element] > 1) {
-    $output = '<div class="previous-next">';
-    if ($page_curr!=$pager_total[$element]) $output.= '<a href="?page='.$page_prev.'" class="prev">Older posts</a>';
-    if ($pager_page_array[$element]!=0) $output.= '<a href="?page='.$page_next.'" class="next">Newer Posts</a>';
-    $output.= '</div>';
+    $output = '<div class="item-list"><ul class="pager">';
+    if ($page_curr!=$pager_total[$element]) $output.= '<li class="pager-previous"><a href="?page='.$page_prev.'">Older posts</a></li>';
+    if ($pager_page_array[$element]!=0) $output.= '<li class="pager-next"><a href="?page='.$page_next.'">Newer Posts</a></li>';
+    $output.= '</ul></div>';
     
     return $output;
   }
