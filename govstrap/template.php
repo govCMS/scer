@@ -83,7 +83,6 @@ function govstrap_menu_tree__menu_block__3($variables) {
     return '<ul class="nav nav-pills nav-stacked">' . $variables['tree'] . '</ul>';
 }
 
-
 function node_sibling($dir = 'next', $node, $next_node_text=NULL, $prepend_text=NULL, $append_text=NULL, $tid = FALSE){
     if($tid){
         $query = 'SELECT n.nid, n.title FROM {node} n INNER JOIN {term_node} tn ON n.nid=tn.nid WHERE '
@@ -105,4 +104,21 @@ function node_sibling($dir = 'next', $node, $next_node_text=NULL, $prepend_text=
     } else {
         return FALSE;
     }
+}
+
+function govstrap_pager($tags = array(), $limit = 10, $element = 0, $parameters = array()) {
+  global $pager_page_array, $pager_total;
+  
+  $page_next = $pager_page_array[$element] - 1;
+  $page_curr = $pager_page_array[$element] + 1;
+  $page_prev = $pager_page_array[$element] + 1;
+  
+  if ($pager_total[$element] > 1) {
+    $output = '<div class="previous-next">';
+    if ($page_curr!=$pager_total[$element]) $output.= '<a href="?page='.$page_prev.'" class="prev">Older posts</a>';
+    if ($pager_page_array[$element]!=0) $output.= '<a href="?page='.$page_next.'" class="next">Newer Posts</a>';
+    $output.= '</div>';
+    
+    return $output;
+  }
 }
