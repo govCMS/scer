@@ -250,12 +250,12 @@ div#content .pager li:first-of-type {
   margin-left: 0;
 }
 div#content .pager li.pager-previous a:before {
-  content: "&lsaquo;";
-  margin-right: 10px;
+  content: "\02039";
+  margin-left: 8px;
 }
 div#content .pager li.pager-next a:after {
-  content: "&rsaquo;";
-  margin-left: 10px;
+  content: "\0203A";
+  margin-left: 8px;
 }
 div#content .content .submitted {
   opacity: 0.75;

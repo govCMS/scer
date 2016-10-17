@@ -260,12 +260,12 @@ div#content {
         margin-left: 0;
       }
       &.pager-previous a:before {
-        content: "&lsaquo;";
-        margin-right: 10px;
+        content: "\02039";
+        margin-left: 8px;
       }
       &.pager-next a:after {
-        content: "&rsaquo;";
-        margin-left: 10px;
+        content: "\0203A";
+        margin-left: 8px;
       }
     }
   }
