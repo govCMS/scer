@@ -259,6 +259,14 @@ div#content {
         padding-left: 0;
         margin-left: 0;
       }
+      &.pager-previous a:before {
+        content: "&lsaquo;";
+        margin-right: 10px;
+      }
+      &.pager-next a:after {
+        content: "&rsaquo;";
+        margin-left: 10px;
+      }
     }
   }
   .content .submitted {

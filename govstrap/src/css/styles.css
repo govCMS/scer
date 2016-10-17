@@ -249,6 +249,14 @@ div#content .pager li:first-of-type {
   padding-left: 0;
   margin-left: 0;
 }
+div#content .pager li.pager-previous a:before {
+  content: "&lsaquo;";
+  margin-right: 10px;
+}
+div#content .pager li.pager-next a:after {
+  content: "&rsaquo;";
+  margin-left: 10px;
+}
 div#content .content .submitted {
   opacity: 0.75;
 }
