@@ -251,7 +251,7 @@ div#content .pager li:first-of-type {
 }
 div#content .pager li.pager-previous a:before {
   content: "\02039";
-  margin-left: 8px;
+  margin-right: 8px;
 }
 div#content .pager li.pager-next a:after {
   content: "\0203A";
