@@ -200,7 +200,7 @@ footer {
 }
 
 div#content {
-  padding-left: 15px;
+  padding: 0 15px;
   aside {
     line-height: 160%;
     color: #666;
@@ -263,9 +263,13 @@ div#content {
         content: "\02039";
         margin-right: 8px;
       }
-      &.pager-next a:after {
-        content: "\0203A";
-        margin-left: 8px;
+      &.pager-next {
+        float: right;
+        margin-right: 15px;
+        a:after {
+          content: "\0203A";
+          margin-left: 8px;
+        }
       }
     }
   }

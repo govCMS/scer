@@ -191,7 +191,7 @@ footer ul.list-inline li a {
 }
 
 div#content {
-  padding-left: 15px;
+  padding: 0 15px;
 }
 div#content aside {
   line-height: 160%;
@@ -252,6 +252,10 @@ div#content .pager li:first-of-type {
 div#content .pager li.pager-previous a:before {
   content: "\02039";
   margin-right: 8px;
+}
+div#content .pager li.pager-next {
+  float: right;
+  margin-right: 15px;
 }
 div#content .pager li.pager-next a:after {
   content: "\0203A";
