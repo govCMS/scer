@@ -207,7 +207,8 @@ div#content {
     div#block-views-9d48c1bdf34a5432a235eb928a4e213d {
       background-color: #ffffcc;
     }
-    .block-views, #block-aggregator-feed-1 {
+    .block-views,
+    #block-aggregator-feed-1 {
       border-radius: 5px;
       margin: 0 0 15px;
       padding: 0px;
@@ -265,7 +266,6 @@ div#content {
       }
       &.pager-next {
         float: right;
-        margin-right: 15px;
         a:after {
           content: "\0203A";
           margin-left: 8px;

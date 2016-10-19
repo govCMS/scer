@@ -200,14 +200,16 @@ div#content aside {
 div#content aside div#block-views-9d48c1bdf34a5432a235eb928a4e213d {
   background-color: #ffffcc;
 }
-div#content aside .block-views, div#content aside #block-aggregator-feed-1 {
+div#content aside .block-views,
+div#content aside #block-aggregator-feed-1 {
   border-radius: 5px;
   margin: 0 0 15px;
   padding: 0px;
   background-color: #fff;
   border: 1px solid #c0c0c0;
 }
-div#content aside .block-views h2.block-title, div#content aside #block-aggregator-feed-1 h2.block-title {
+div#content aside .block-views h2.block-title,
+div#content aside #block-aggregator-feed-1 h2.block-title {
   font-size: 12px;
   color: #444;
   font-weight: bold;
@@ -217,25 +219,30 @@ div#content aside .block-views h2.block-title, div#content aside #block-aggregat
   margin: 0;
   padding: 8px 24px 7px 10px;
 }
-div#content aside .block-views div.views-field-title, div#content aside #block-aggregator-feed-1 div.views-field-title {
+div#content aside .block-views div.views-field-title,
+div#content aside #block-aggregator-feed-1 div.views-field-title {
   margin: 0;
   overflow: hidden;
   padding: 0px 0px 0px;
 }
-div#content aside .block-views ul, div#content aside #block-aggregator-feed-1 ul {
+div#content aside .block-views ul,
+div#content aside #block-aggregator-feed-1 ul {
   list-style-type: disc;
   padding-left: 25px;
   padding-right: 5px;
 }
-div#content aside .block-views ul li, div#content aside #block-aggregator-feed-1 ul li {
+div#content aside .block-views ul li,
+div#content aside #block-aggregator-feed-1 ul li {
   margin: 0;
   padding-top: 2px;
   padding-bottom: 3px;
 }
-div#content aside .block-views ul li a, div#content aside #block-aggregator-feed-1 ul li a {
+div#content aside .block-views ul li a,
+div#content aside #block-aggregator-feed-1 ul li a {
   color: #000;
 }
-div#content aside .block-views div.more-link, div#content aside #block-aggregator-feed-1 div.more-link {
+div#content aside .block-views div.more-link,
+div#content aside #block-aggregator-feed-1 div.more-link {
   display: none;
 }
 div#content .pager {
@@ -255,7 +262,6 @@ div#content .pager li.pager-previous a:before {
 }
 div#content .pager li.pager-next {
   float: right;
-  margin-right: 15px;
 }
 div#content .pager li.pager-next a:after {
   content: "\0203A";
